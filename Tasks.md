@@ -1,4 +1,4 @@
-# EPAMpublic class Main {
+public class Main {
     public static void main(String[] args) {
         //Добый день =) Для каждого метода сделал свою функцию.
         //Для проверки в методе main вызываю их последовательно и результат принтую.
