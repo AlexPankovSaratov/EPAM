@@ -1,0 +1,29 @@
+public class Dynamic_stack{
+    private char stack[];
+    private int index;
+    public Dynamic_stack(int size) {
+        stack = new char[size];
+        index = -1;
+    }
+    public void AddInStack(char value) {
+        if(index == stack.length-1){
+            char temp[] = new char [stack.length*2];
+            for(int i = 0; i< stack.length; i++) temp[i] = stack[i];
+            stack = temp;
+            stack[++index] = value;
+        }else{
+            stack[++index] = value;
+        }
+
+    }
+    public char getLastValue() {
+        if(index < 0){
+            System.out.print("Стек не загружен");
+            return ' ';
+        }
+        char LastValue = stack[index];
+        stack[index] = ' ';
+        index--;
+        return LastValue;
+    }
+}
