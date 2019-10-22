@@ -5,13 +5,10 @@ public class Main {
         //В 5 задании использую самописный класс стэка "Dynamic_stack"
         int[] nums = new int[] { 10, 5, 3, 8, 2 };
         int[] result = Task1_ArraySorting(nums);
-
         System.out.println("Результат 1 задания :");
-
         for(int i = 0; i < result.length; i ++)
             System.out.println("Array element = " + result[i]);
         int x = 5;
-
         System.out.println("");
         System.out.println("Результат 2 задания :");
         if (Task2_Search(x, result)) {
@@ -19,15 +16,12 @@ public class Main {
         }else{
             System.out.println("Данного значения нет в массиве = " + x);
         }
-
         System.out.println("");
         System.out.println("Результат 3 задания :");
         System.out.println(Task3_UniqueWords("один два три четыри два четыри пять"));
-
         System.out.println("");
         System.out.println("Результат 4 задания :");
         Task4_factorial(25);
-
         System.out.println("");
         System.out.println("Результат 5 задания :");
         String BracketSequence = "([()]){()}";
@@ -60,7 +54,6 @@ public class Main {
         }
         return result;
     }
-
     //Задание 3 Возвращает только те слова, которые встречаются в ней только один
     //раз.
     public static String Task3_UniqueWords(String x){
@@ -107,7 +100,6 @@ public class Main {
                     if(!(Stack.getLastValue()  == '{')) return false;
                 }
             }
-
         }
         return true;
     }
