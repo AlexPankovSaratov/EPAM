@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         //Добый день =) Для каждого метода сделал свою функцию.
